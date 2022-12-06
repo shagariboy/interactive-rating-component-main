@@ -1,0 +1,11 @@
+// Responsive Design for index.html 
+@media screen and (min-width: $tablet-breakpoint) {
+    body {
+        @include flexBox(center, center, column);
+        .main-container {
+            max-width: 300px;
+        }
+    
+    }
+}
+

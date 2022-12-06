@@ -1,0 +1,119 @@
+#rating-container {
+    min-width: 100%;
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+
+    .rating-numbers {
+        @include flexBox(space-between, center, row);
+
+        .rating-btn {
+            font-family: $overpass-font;
+            border-radius: 50%;
+            border: none;
+            background-color: $dark-blue;
+            color: $light-grey;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            appearance: none;
+        }
+
+        .rating-btn:hover {
+            color: $white;
+            background-color: $orange;
+        }
+
+        .rating-btn:focus {
+            color: $white;
+            background-color: $light-grey;
+        }
+
+        .rating-btn ::placeholder {
+            text-align: center;
+            vertical-align: middle;
+            justify-self: center;
+
+        }
+
+        .rating-btn ::placeholder :hover {
+            color: #fff;
+        }
+
+        .rating-btn ::placeholder :focus {
+            color: #fff;
+        }
+
+    }
+
+    .submit-btn {
+        font-family: $overpass-font;
+        background-color: $orange;
+        color: $white;
+        margin-top: 1.4rem;
+        border: none;
+        border-radius: 50px;
+        width: 100%;
+        padding: .8rem;
+        cursor: pointer;
+    }
+
+    .submit-btn:hover {
+        color: $orange;
+        background-color: $white;
+
+    }
+}
+
+@mixin placeholder-color ($color, $focus) {
+    &::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: $color;
+
+        &:focus {
+            &::-webkit-input-placeholder {
+                /* WebKit, Blink, Edge */
+                color: $focus;
+            }
+        }
+    }
+
+    &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: $color;
+        opacity: 1;
+
+        &:focus {
+            &:-moz-placeholder {
+                /* Mozilla Firefox 4 to 18 */
+                color: $focus;
+                opacity: 1;
+            }
+        }
+    }
+
+    &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: $color;
+        opacity: 1;
+
+        &:focus {
+            &::-moz-placeholder {
+                /* Mozilla Firefox 19+ */
+                color: $focus;
+                opacity: 1;
+            }
+        }
+    }
+
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: $color;
+
+        &:focus {
+            &:-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: $focus;
+            }
+        }
+    }
+}

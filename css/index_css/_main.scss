@@ -1,0 +1,17 @@
+body {
+    background-color: $very-dark-blue;
+    font-family: $overpass-font;
+    font-size: $paragraph-size;
+    color: $light-grey;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    #rating-state-section.main-container {
+        @include flexBox(center, flex-start, column);
+        background-color: $dark-blue-01;
+        border-radius: 15px;
+        margin: 9.7rem 1.6rem;
+        padding: 1.5rem;
+    }
+}
+

@@ -1,0 +1,29 @@
+#thank-you-state-section {
+    @include flexBox(center, center, column);
+    display: none;
+    background-color: $dark-blue-01;
+    border-radius: 15px;
+    margin: 9.7rem 1.6rem;
+    padding: 1.5rem;
+    #submitted-img {
+        margin-top: .6rem;
+        display: flex;
+        justify-content: center;
+        img{
+        width: 150px;
+        }
+    }
+    #user-rating-container {
+        display: flex;
+        justify-content: center;
+        .user-rating-text {
+            border-radius: 50px;
+            border: none ;
+            background-color: $dark-blue;
+            color: $orange;
+            padding: .4rem .8rem;
+        }
+
+    }
+}
+
