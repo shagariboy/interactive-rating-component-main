@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Kevin27j/interactive-rating-component)
-- Live Site URL: [Live Site](https://kevin27j.github.io/interactive-rating-component/)
+- Live Site URL: [Live Site](https://delightful-sunburst-264113.netlify.app/)
 
 ## My process
 
